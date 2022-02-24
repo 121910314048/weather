@@ -1,0 +1,7 @@
+.noLocationAccess {
+  padding: 2rem;
+  outline: solid hotpink 1px;
+  background-color: rgba(255, 182, 193, 0.425);
+  color: slategrey;
+  border-radius: 0.5rem;
+}

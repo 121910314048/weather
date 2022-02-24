@@ -1,0 +1,35 @@
+.weather__svg {
+  width: 20rem;
+  height: 20rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .weather__svg {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .weather__svg {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .weather__svg {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .weather__svg {
+    width: 15rem;
+    height: 15rem;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .weather__svg {
+    width: 20rem;
+    height: 20rem;
+  }
+}
