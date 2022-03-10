@@ -25,11 +25,11 @@ const WeatherWidget = (props) => {
   const [coordinates, setCoordinates] = useState({ latitude: null, longitude: null });
   const [weatherInfo, setWeatherInfo] = useState({
     location: null,
-    status: null,
+   // status: null,
     statusDescription: null,
     temp: null,
-    humidity: null,
-    windspeed: null,
+   // humidity: null,
+    //windspeed: null,
   });
   const [loading, setLoading] = useState(false);
 
@@ -41,11 +41,11 @@ const WeatherWidget = (props) => {
         const data = response.data;
         resolve({
           location: data.name,
-          status: data.weather[0].main,
+          //status: data.weather[0].main,
           statusDescription: formatStatusDesc(data.weather[0].description),
           temp: data.main.temp,
-          humidity: data.main.humidity,
-          windspeed: data.wind.speed,
+         // humidity: data.main.humidity,
+          //windspeed: data.wind.speed,
         });
       });
     })
@@ -108,15 +108,11 @@ const WeatherWidget = (props) => {
       // Geo Location Navigator not supported
     }
   }, []);
-
-  return(
+   return(
     <>
       {hasLocationAccess
         ? <>
-            <div className="card">
-              <div className="location">
-                <span>{weatherInfo.location}</span>
-              </div>
+            
               <div className="status">
                 <span className="status__title">{weatherInfo.status}</span>
                 <span className="status__desc">{weatherInfo.statusDescription}</span>
@@ -124,16 +120,12 @@ const WeatherWidget = (props) => {
               <div className="others">
                 <div className="temperature">
                   <span>Temperature: </span>
-                  <code>{weatherInfo.temp} °C</code>
+                  <code>{weatherInfo.temp} °Celcius</code>
                 </div>
-                <div className="humidity">
-                  <span>Humidity: </span>
-                  <code>{weatherInfo.humidity} %</code>
-                </div>
-                <div className="windSpeed">
-                  <span>Wind Speed: </span>
-                  <code>{weatherInfo.windspeed} m/s</code>
-                </div>
+               <div className="card">
+              <div className="location">
+                <span>{weatherInfo.location}</span>
+              </div>
               </div>
             </div>
           </>

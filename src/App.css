@@ -9,7 +9,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: infinite 20s linear;
   }
 }
 
@@ -23,7 +23,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  background: -webkit-linear-gradient(#aed9e7, #ffffff);
+  background: -webkit-linear-gradient(116.82deg, #add8e6 0%, #ffffff 100%);
 }
 @media only screen and (max-width: 480px) {
   .App-header {
@@ -57,7 +57,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #add8e6;
 }
 
 @keyframes App-logo-spin {

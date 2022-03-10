@@ -1,3 +1,6 @@
+.app {
+  background-image: url("bgimage.jpg");
+}
 .card {
   color: dimgray;
   display: flex;
@@ -5,7 +8,7 @@
   align-items: flex-start;
   background-color: honeydew;
   border-radius: 0.5rem;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  box-shadow: #0000001a 0px 10px 15px -3px, #0000000d 0px 4px 6px -2px;
   padding: 2rem;
   min-width: 1vw;
 }
@@ -17,7 +20,7 @@ code {
 
 .location {
   margin-bottom: 2rem;
-  background-color: rgba(135, 207, 235, 0.507);
+  background-color: rgba(236, 237, 238, 0.507);
   border-radius: 0.5rem;
   padding: 0.5rem;
   font-size: 2rem;
@@ -65,7 +68,8 @@ code {
 }
 .refresh:hover {
   transform: scale(1.1);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   color: black;
   font-size: 1.2rem;
 }
