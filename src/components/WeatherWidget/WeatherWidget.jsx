@@ -4,6 +4,7 @@ import {SpinnerWidget} from "../SpinnerWidget";
 import WeatherSVG from "../WeatherSVG/WeatherSVG";
 import NoLocAccess from "../NoLocAccess/NoLocAccess";
 import "./WeatherWidget.css";
+import logo from '../bgimage.jpg';
 
 const formatURL = (lat, long) => {
   // api call:
@@ -113,21 +114,22 @@ const WeatherWidget = (props) => {
       {hasLocationAccess
         ? <>
             
-              <div className="status">
-                <span className="status__title">{weatherInfo.status}</span>
-                <span className="status__desc">{weatherInfo.statusDescription}</span>
-              </div>
-              <div className="others">
-                <div className="temperature">
-                  <span>Temperature: </span>
-                  <code>{weatherInfo.temp} °Celcius</code>
-                </div>
-               <div className="card">
-              <div className="location">
+              <div className="card">
+              <div className="code">
+                 <span>The Weather App</span>
+                 </div>
+                 <div className="location">
+                  <span>{weatherInfo.temp} °Celcius</span>
+                  </div>
+                  <div className="code">
                 <span>{weatherInfo.location}</span>
+                 </div>
               </div>
-              </div>
-            </div>
+              <div>
+         <img style={{ width: 250, height: 344, marginBottom: 15}} src={logo} />
+     </div>
+              
+           
           </>
         : <NoLocAccess />
       }

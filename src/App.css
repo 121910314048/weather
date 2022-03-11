@@ -4,6 +4,7 @@
 
 .App-logo {
   height: 40vmin;
+  -moz-box-align: var(1px);
   pointer-events: none;
 }
 
@@ -15,15 +16,17 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 80vh;
+  min-width: max-content;
+  /*-width: 1024px;*/
   display: flex;
   flex-direction: row;
-  gap: 25rem;
+  gap: 1rem;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  background: -webkit-linear-gradient(116.82deg, #add8e6 0%, #ffffff 100%);
+  background: -webkit-linear-gradient(116.82deg, #add8e6 0%, #ffffff 80%);
 }
 @media only screen and (max-width: 480px) {
   .App-header {
@@ -40,19 +43,19 @@
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .App-header {
     flex-direction: row;
-    gap: 10rem;
+    gap: 2rem;
   }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
   .App-header {
     flex-direction: row;
-    gap: 15rem;
+    gap: 5rem;
   }
 }
 @media only screen and (min-width: 1201px) {
   .App-header {
     flex-direction: row;
-    gap: 20rem;
+    gap: 10rem;
   }
 }
 

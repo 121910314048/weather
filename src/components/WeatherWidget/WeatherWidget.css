@@ -1,29 +1,38 @@
 .app {
-  background-image: url("bgimage.jpg");
+  /* background-image: url("./bgimage.jpg");*/
 }
 .card {
-  color: dimgray;
+  color: rgb(105, 105, 105);
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  background-color: honeydew;
-  border-radius: 0.5rem;
-  box-shadow: #0000001a 0px 10px 15px -3px, #0000000d 0px 4px 6px -2px;
+  align-items: center;
+  /* background-color: white;*?
+  box-sizing: "content-box";
+  width: 100%;
+  border:solid;
+  /* box-shadow: #0000001a 0px 10px 15px -3px, #0000000d 0px 4px 6px -2px;*/
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   padding: 2rem;
-  min-width: 1vw;
+  color: blue;
+  margin-top: 2rem;
+  margin-left: 15rem;
 }
 code {
-  background-color: rgba(255, 182, 193, 0.425);
-  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  background-color: white;
+  font-weight: bold;
+  color: rgb(0, 140, 255);
   padding: 0.2rem;
+  font-size: 1rem;
 }
 
 .location {
-  margin-bottom: 2rem;
-  background-color: rgba(236, 237, 238, 0.507);
-  border-radius: 0.5rem;
-  padding: 0.5rem;
-  font-size: 2rem;
+  background-color: white;
+  font-weight: bold;
+  /*border-radius: 0.5rem;*/
+  color: black;
+  padding: 0.2rem;
+  font-size: 1.2rem;
 }
 
 .status {
