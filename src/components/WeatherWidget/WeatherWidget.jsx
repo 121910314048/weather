@@ -4,7 +4,7 @@ import {SpinnerWidget} from "../SpinnerWidget";
 import WeatherSVG from "../WeatherSVG/WeatherSVG";
 import NoLocAccess from "../NoLocAccess/NoLocAccess";
 import "./WeatherWidget.css";
-import logo from '../bgimage.jpg';
+
 
 const formatURL = (lat, long) => {
   // api call:
@@ -126,7 +126,7 @@ const WeatherWidget = (props) => {
                  </div>
               </div>
               <div>
-         <img style={{ width: 250, height: 344, marginBottom: 15}} src={logo} />
+         <img src="./weatherbgpic.svg"></img>
      </div>
               
            
